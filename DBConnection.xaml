@@ -101,7 +101,7 @@
                 <av:Size x:Key="ShapeSize">200,66</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Select query" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Select query" sap:VirtualizedContainerService.HintSize="476,542" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="testingVar" />
               </Sequence.Variables>
@@ -112,15 +112,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:DatabaseConnect DatabaseConnection="[DBcon]" DisplayName="Connect" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_2" ProviderName="System.Data.SqlClient" ConnectionString="Data Source=tmw-dev-sql01.amerit.com;Initial Catalog=TMWAMS_RPA;Persist Security Info=True;User ID=RPA;Password=Welcome_2019" />
-              <ui:DatabaseTransaction ContinueOnError="{x:Null}" DatabaseConnection="{x:Null}" DisplayName="Start Transaction" ExistingDbConnection="[DBcon]" sap:VirtualizedContainerService.HintSize="434,388" sap2010:WorkflowViewState.IdRef="DatabaseTransaction_2" UseTransaction="True">
+              <ui:DatabaseTransaction ContinueOnError="{x:Null}" DatabaseConnection="{x:Null}" DisplayName="Start Transaction" ExistingDbConnection="[DBcon]" sap:VirtualizedContainerService.HintSize="434,289" sap2010:WorkflowViewState.IdRef="DatabaseTransaction_2" UseTransaction="True">
                 <ui:DatabaseTransaction.Body>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,279" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,180" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[in_SelectQuery]" />
                     <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[out_DateAlreadyExistsDT]" DisplayName="Execute Query" ExistingDbConnection="[DBcon]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="[in_SelectQuery]">
                       <ui:ExecuteQuery.Parameters>
                         <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -139,7 +138,7 @@
                 <av:Size x:Key="ShapeSize">200,66</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="DB Insert for Bank reports from shared folder" sap:VirtualizedContainerService.HintSize="476,660" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="DB Insert for Bank reports from shared folder" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="testingVar" />
               </Sequence.Variables>
